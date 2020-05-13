@@ -25,13 +25,18 @@ app.on('ready', () => {
 /* 
       Explicação geral do código no contexto do que mudou nas atualizações:
 
-      Basicamente o ideal era: quando a gente pede pro bot tocar alguma coisa, ele se junta e toca, e não termos dois comandos separados, um pra ele se juntar e um pra ele tocar coisas.
-      Na versão que eu fiz os vídeos, ter dois comandos separados era tranquilo e intuitivo, apesar de ter uma usabilidade meio boba, em termos de código isso era de boa. Nas versões atuais, não é mais o caso.
-      Assim, temos semi-gambiarras aqui pra fazer o mesmo bot do vídeo funcionar.
+      Basicamente o ideal era: quando a gente pede pro bot tocar alguma coisa,
+      ele se junta e toca, e não termos dois comandos separados, um pra ele se
+      juntar e um pra ele tocar coisas. Na versão que eu fiz os vídeos, ter dois
+      comandos separados era tranquilo e intuitivo, apesar de ter uma usabilidade
+      meio boba, em termos de código isso era de boa. Nas versões atuais, não é
+      mais o caso. Assim, temos semi-gambiarras aqui pra fazer o mesmo bot do vídeo
+      funcionar.
 */
 
 
-// Agora precisamos de uma referência ao join, ela está aqui fora pra não ser perdida cada vez que o evento 'message' acontecer.
+// Agora precisamos de uma referência ao join, ela está aqui fora pra não ser
+// perdida cada vez que o evento 'message' acontecer.
 let connection;
 
 // A arrow function agora precisa ser async
@@ -82,5 +87,6 @@ TODAS AS MUDANÇAS (do vídeo para a versão mais recente testada):
 
       - msg.member.voiceChannel <=> msg.member.voice.channel
       - playFile(); <=> play();
-      - let connection = await message.member.voice.channel.join() é como temos acesso ao antigo 'connection' agora.
+      - let connection = await message.member.voice.channel.join() é como 
+      temos acesso ao antigo 'connection' agora.
 */
