@@ -1,5 +1,5 @@
 {
-  "name": "3-YT_Bot",
+  "name": "youtube-codes",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
+    "discord.js": "^12.2.0",
     "node-opus": "^0.3.3",
     "simple-youtube-api": "^5.2.1",
-    "ytdl-core": "^1.0.0"
+    "ytdl-core": "^2.1.1"
   }
 }
