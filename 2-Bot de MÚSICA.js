@@ -19,7 +19,7 @@ app.on('ready', () => {
 });
 
 app.on('message', (msg) => {
-      // onde era "msg.member.voiceChannel" virou "msg.member.voiceChannel".
+      // onde era "msg.member.voiceChannel" virou "msg.member.voice.channel".
       if (msg.content === 'join' && msg.member.voice.channel && !msg.author.bot){
             msg.member.voice.channel.join().then(connection => {
                   // onde era "playFile" virou "play" apenas.
@@ -36,7 +36,7 @@ app.login(token);
 /*
 TODAS AS MUDANÇAS (do vídeo para a versão mais recente testada):
 
-      - msg.member.voiceChannel <=> msg.member.voiceChannel
+      - msg.member.voiceChannel <=> msg.member.voice.channel
       - playFile(); <=> play();
       - 'end' <=> 'finish'
 */
