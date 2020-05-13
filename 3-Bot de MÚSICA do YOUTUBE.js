@@ -13,7 +13,7 @@ App funcionando com testes mais recentes feitos nas versões:
 const Discord = require('discord.js');
 const Ytdl = require('ytdl-core');
 
-const token = 'NjI5NzkxNzA1NjM3MzIyNzYz.Xq-f_A.SM_7dczMpazLHm3uEZ0crk6x7pc';
+const token = 'SEU_TOKEN_AQUI';
 
 const app = new Discord.Client();
 let estouPronto = false;
